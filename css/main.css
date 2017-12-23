@@ -1,0 +1,113 @@
+/*jax colors: light blue = #009ED0, dark blue= #05396B*/
+#root{
+	font-family: 'Lato',sans-serif;
+	position:static;
+    left:0px;
+    top:0px;
+    width:auto;
+    height:800px;
+    opacity:1.0;
+}
+
+#toolbar_mask_div{
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:180px;
+	background-color:white;
+	opacity:0.9;
+	z-index:3;
+}
+
+#search_div{
+	position:fixed;
+    left:10px;
+    top:10px;
+    width:auto;
+    height:auto;
+    padding:10px;
+    font-size:120%;
+    color:            white;
+    background-color: rgb(210,210,210);
+    border-color:black;
+    border-radius:10px;
+    opacity:1.0;
+    z-index:100;	
+}
+
+#call_set_div{
+	position:fixed;
+    left:10px;
+    top:70px;
+    width:auto;
+    height:auto;
+    background-color: rgb(210,210,210);
+    border-color:black;
+    border-radius:10px;
+    opacity:1.0;
+    z-index:91;	
+}
+
+#axis_div{
+	position:fixed;
+	left:10px;
+	top:140px;
+	width:auto;
+	height:auto;
+	opacity:0.7;
+	z-index:3;
+}
+
+#bins_div{
+	position:absolute;
+    left:10px;
+    top:180px;
+    width:auto;
+    height:auto;
+    background-color: #ffffff;
+    border-style:hidden;
+    border-radius:0px;
+    opacity:1.0;
+    z-index:2;	
+}
+
+#info_div{
+	position:fixed;
+    top:110px;
+    left:10px;
+    width:auto;
+    height:auto;
+    background-color: #ffffff;
+    border-style:hidden;
+    border-color: rgba(120,120,120,0.3);
+    border-radius:20px;
+    opacity:0.0;
+    z-index:100;	
+}
+
+/*jax colors: light blue = #009ED0, dark blue= #05396B*/
+.base_button{
+	margin-left:16px;
+	margin-right:16px;
+	font-family: 'Lato',sans-serif;
+	font-size:120%;
+	border-radius:0px;
+	border-style:hidden;
+	color:            white;
+	background-color: black;
+    opacity:0.7;
+}
+
+/*jax colors: light blue = #009ED0, dark blue= #05396B*/
+.caller_button{
+	margin-left:8px;
+	margin-right:8px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-family: 'Lato',sans-serif;
+	font-size:120%;
+	color:   black;
+}
+
+
