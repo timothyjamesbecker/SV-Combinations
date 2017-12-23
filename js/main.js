@@ -1,5 +1,7 @@
 /* 
- * fusorSV web app sorted view
+Timothy Becker, UCONN PhD candidate 12/16/2015
+Explore Performance of Combinations of SV call sets
+for each type and size using color markings
  */
 var metadata =        {}; //load the metadata
 var caller_colors =   {};
@@ -191,7 +193,7 @@ function search_framework(){
         var view_btn = new Button({
             baseClass:"base_button",
             showLabel:true,
-            label: "bins", // analogous to title when showLabel is false
+            label: "explore", // analogous to title when showLabel is false
             onClick: function(){
                 Query(".call_set").forEach(function(node){ 
                     var toggle = dijit.getEnclosingWidget(node);
