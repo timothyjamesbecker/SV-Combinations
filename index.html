@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+Timothy Becker, UCONN PhD candidate 12/16/2015
+Explore Performance of Combinations of SV call sets
+for each type and size using color markings
+-->
+<html>
+    <head>
+        <title>Combinatorial SV Visual Explorer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- basic dojo CSS theme for buttons and nice menus, etc-->
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <!-- confgure dojo 1.10.4 AMD with additional libraries-->
+        <script>
+    		var dojoConfig = {
+        		async:       true,
+        		parseOnLoad: true,
+        		packages:    [{name:"d3",location:"https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.11/"}]
+    		};
+		</script>
+		<!-- dynamically load dojo 1.10.4 with configurations AMD-->
+        <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script>
+		<link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body id="root" class="claro">
+    	<div id="toolbar_mask_div">
+    		<div id="search_div">SV Combinations: </div>
+    		<div id="call_set_div"></div>
+    		<div id="axis_div"></div>
+    		<div id="info_div"></div>
+    	</div>
+    	<div id="bins_div"></div>
+    </body>
+</html>
