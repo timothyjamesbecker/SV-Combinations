@@ -17,7 +17,7 @@ function load_metadata(){
     require(["dojo/json","dojo/dom", "dojo/on", "dojo/request", "dojo/domReady!"],
         function(JSON, dom, on, request){
             // Request the text file
-            request.get('_metrics/metadata.json').then(
+            request.get('metrics/metadata.json').then(
                 function(response){
                 	metadata = JSON.parse(response);
                 	//add some reverse mappings
@@ -215,7 +215,7 @@ function graph_t_m_bins(target,type,metric,bins,top){
     require(["dojo/dom","dojo/dom-construct","dojo/dom-class","dojo/domReady!"],
     function(dom,con,cl) {
             for(b in bins){
-                var uri = "_metrics/"+target+"/sorted/"+type+"/"+bins[b]+"/"+metric+".json"; //find the file
+                var uri = "metrics/"+target+"/sorted/"+type+"/"+bins[b]+"/"+metric+".json"; //find the file
                 var bin_id = "bin"+b+"_span";                                          //give it an id
                 var bin  = con.create("span",{Id:bin_id},"bins_div");                  //make a span for it
                 bar_plot_json(uri,bin_id,bins[b],metric,top,60,20,2);                                  
