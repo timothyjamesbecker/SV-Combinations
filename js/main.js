@@ -17,10 +17,7 @@ function load_metadata(){
     require(["dojo/json","dojo/dom", "dojo/on", "dojo/request", "dojo/domReady!"],
         function(JSON, dom, on, request){
             // Request the text file
-            request.get('_metrics/metadata.json',
-            {
-                headers:{'X-Requested-With': null,'Content-Type': 'application/json'}
-            }).then(
+            request.get('_metrics/metadata.json').then(
                 function(response){
                 	metadata = JSON.parse(response);
                 	//add some reverse mappings
